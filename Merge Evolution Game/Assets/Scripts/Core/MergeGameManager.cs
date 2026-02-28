@@ -133,7 +133,7 @@ namespace MergeEvolution.Core
             rect.sizeDelta = new Vector2(1000, 60);
 
             var txt = go.AddComponent<Text>();
-            txt.font = Resources.GetBuiltinResource<Font>("Arial.ttf");
+            txt.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
             txt.fontSize = size;
             txt.color = Color.white;
             txt.alignment = TextAnchor.MiddleLeft;
