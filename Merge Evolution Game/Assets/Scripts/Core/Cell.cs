@@ -1,4 +1,3 @@
-using MergeEvolution.Data;
 using UnityEngine;
 
 namespace MergeEvolution.Core
@@ -6,28 +5,23 @@ namespace MergeEvolution.Core
     public class Cell : MonoBehaviour
     {
         public Vector2Int gridPosition;
-        
-        [Header("Estado")]
-        public bool isOccupied;
-        
-        public GameObject currentPiece; 
-        public BoardItemData currentItemData;
+        public Piece currentPiece;
 
-        public void SetPiece(GameObject newPiece, BoardItemData data)
+        public bool IsOccupied => currentPiece != null;
+
+        public void SetPiece(Piece piece)
         {
-            currentPiece = newPiece;
-            currentItemData = data;
-            isOccupied = true;
-            
-            // Ao entra na célula, vira "filho" dela para herdar o tamanho (perspectiva)
-            newPiece.transform.SetParent(this.transform);
+            currentPiece = piece;
+            if (piece == null) return;
+
+            piece.currentCell = this;
+            piece.transform.SetParent(transform);
+            piece.transform.position = transform.position;
         }
 
-        public void ClearCell()
+        public void ClearPiece()
         {
             currentPiece = null;
-            currentItemData = null;
-            isOccupied = false;
         }
     }
 }

@@ -1,145 +1,89 @@
-using UnityEngine;
-using MergeEvolution.Data;
 using System.Collections.Generic;
+using UnityEngine;
 
 namespace MergeEvolution.Core
 {
     public class BoardGrid : MonoBehaviour
     {
-        [Header("Configurações Básicas")]
+        [Header("Grid")]
         public int width = 5;
-        public int height = 7;
+        public int height = 5;
+        public float cellSize = 1.2f;
 
-        [Header("Perspectiva Trapezoidal (Crie 4 Empties na Cena)")]
-        [Tooltip("Arraste 4 GameObjects que representem visualmente os 4 cantos do seu desenho de tabuleiro!")]
-        public Transform bottomLeftCorner;
-        public Transform bottomRightCorner;
-        public Transform topLeftCorner;
-        public Transform topRightCorner;
+        [Header("Visual")]
+        public Color cellColorA = new(0.95f, 0.95f, 1f, 0.22f);
+        public Color cellColorB = new(0.8f, 0.88f, 1f, 0.22f);
 
-        [Header("Profundidade / Tamanho Virtual")]
-        public float scaleAtBottom = 1.0f;
-        public float scaleAtTop = 0.5f;
+        private Cell[,] _cells;
+        private readonly List<Cell> _allCells = new();
 
-        [Header("Referências")]
-        public GameObject cellPrefab;
-
-        private Cell[,] gridCells;
-
-        public static BoardGrid Instance;
+        public IReadOnlyList<Cell> AllCells => _allCells;
 
         private void Awake()
         {
-            Instance = this;
+            Generate();
         }
 
-        private void Start()
+        public void Generate()
         {
-            GeneratePerspectiveGrid();
-        }
+            if (_cells != null && _cells.Length > 0) return;
 
-        private void GeneratePerspectiveGrid()
-        {
-            // Se o usuário esqueceu de criar os cantos, travamos para evitar erro
-            if (bottomLeftCorner == null || topRightCorner == null)
+            _cells = new Cell[width, height];
+
+            var origin = transform.position - new Vector3((width - 1) * cellSize * 0.5f, (height - 1) * cellSize * 0.5f, 0f);
+
+            for (var y = 0; y < height; y++)
             {
-                Debug.LogWarning("Opa! Você esqueceu de definir os 4 cantos da Perspectiva no BoardGrid!");
-                return;
-            }
-
-            gridCells = new Cell[width, height];
-
-            for (int y = 0; y < height; y++)
-            {
-                for (int x = 0; x < width; x++)
+                for (var x = 0; x < width; x++)
                 {
-                    // Descobrimos a "porcentagem" de onde estamos no tabuleiro (0.0 a 1.0)
-                    float percentX = width > 1 ? (float)x / (width - 1) : 0.5f;
-                    float percentY = height > 1 ? (float)y / (height - 1) : 0.5f;
+                    var cellGo = new GameObject($"Cell_{x}_{y}");
+                    cellGo.transform.SetParent(transform);
+                    cellGo.transform.position = origin + new Vector3(x * cellSize, y * cellSize, 0f);
 
-                    // Extrapola as pontas diagonais para achar a LINHA exata
-                    Vector3 leftEdge = Vector3.Lerp(bottomLeftCorner.position, topLeftCorner.position, percentY);
-                    Vector3 rightEdge = Vector3.Lerp(bottomRightCorner.position, topRightCorner.position, percentY);
+                    var sr = cellGo.AddComponent<SpriteRenderer>();
+                    sr.sprite = SpriteFactory.WhiteSquare;
+                    sr.color = ((x + y) % 2 == 0) ? cellColorA : cellColorB;
+                    sr.sortingOrder = 1;
+                    cellGo.transform.localScale = new Vector3(cellSize * 0.95f, cellSize * 0.95f, 1f);
 
-                    // Desliza do lado esquerdo para o lado direito para achar O PONTO exato (Matemática Mágica!)
-                    Vector3 finalPositionInPerspective = Vector3.Lerp(leftEdge, rightEdge, percentX);
+                    var col = cellGo.AddComponent<BoxCollider2D>();
+                    col.isTrigger = true;
 
-                    GameObject cellObj = Instantiate(cellPrefab, finalPositionInPerspective, Quaternion.identity, this.transform);
-                    cellObj.name = $"Cell_X{x}_Y{y}";
+                    var cell = cellGo.AddComponent<Cell>();
+                    cell.gridPosition = new Vector2Int(x, y);
 
-                    // Ilusão de que lá atrás os quadradinhos são menores
-                    float currentDepthScale = Mathf.Lerp(scaleAtBottom, scaleAtTop, percentY);
-                    cellObj.transform.localScale = new Vector3(currentDepthScale, currentDepthScale, 1f);
-
-                    Cell newCell = cellObj.GetComponent<Cell>();
-                    newCell.gridPosition = new Vector2Int(x, y);
-
-                    gridCells[x, y] = newCell;
+                    _cells[x, y] = cell;
+                    _allCells.Add(cell);
                 }
             }
         }
 
-        public Cell GetCell(int x, int y)
+        public Cell GetClosestCell(Vector3 worldPosition, float maxDistance = 0.8f)
         {
-            if (x >= 0 && x < width && y >= 0 && y < height)
+            Cell closest = null;
+            var bestDist = maxDistance;
+
+            foreach (var cell in _allCells)
             {
-                return gridCells[x, y];
-            }
-            return null;
-        }
-
-        // ==========================================
-        //         MECÂNICA DE COMBINAR 3 (MATCH)
-        // ==========================================
-        public void CheckForMerge(Cell targetCell, Piece droppedPiece)
-        {
-            List<Cell> matches = new List<Cell>();
-            HashSet<Cell> visited = new HashSet<Cell>();
-
-            // Espalha um "vírus" matemático achando todos os vizinhos iguais!
-            FloodFillFindMatches(targetCell, droppedPiece.data, matches, visited);
-
-            // ACHOU 3 OU MAIS PEÇAS IGUAIS E GRUDADAS? BINGO!
-            if (matches.Count >= 3)
-            {
-                if (droppedPiece.data != null && droppedPiece.data.nextEvolution != null)
+                var dist = Vector2.Distance(worldPosition, cell.transform.position);
+                if (dist < bestDist)
                 {
-                    // O jogador fez a fusão. 
-                    // Apagamos O RESTO (menos a peça na sua mão que puxou tudo)
-                    foreach(Cell c in matches)
-                    {
-                        if (c != targetCell && c.currentPiece != null)
-                        {
-                            Destroy(c.currentPiece);
-                            c.ClearCell();
-                        }
-                    }
-
-                    // A peça que você está segurando BRILHA e EVOLUI magicamente!
-                    droppedPiece.Setup(droppedPiece.data.nextEvolution);
-
-                    // (Futuramente colocaremos aqui: TocarSomDeExplosao(); InstanciarPoeiraMagica();)
-                    Debug.Log($"<color=green>🌟 SUPER COMBINAÇÃO DE {matches.Count} PEÇAS!</color>");
+                    bestDist = dist;
+                    closest = cell;
                 }
             }
+
+            return closest;
         }
 
-        private void FloodFillFindMatches(Cell cell, BoardItemData dataToMatch, List<Cell> matches, HashSet<Cell> visited)
+        public List<Cell> GetEmptyCells()
         {
-            if (cell == null || visited.Contains(cell) || !cell.isOccupied) return;
-            
-            Piece piece = cell.currentPiece.GetComponent<Piece>();
-            if (piece == null || piece.data != dataToMatch) return;
-
-            // Marca que foi testado e adiciona na roda de amigos
-            visited.Add(cell);
-            matches.Add(cell);
-
-            // Pula para cima, baixo, esquerda e direita contagiando
-            FloodFillFindMatches(GetCell(cell.gridPosition.x + 1, cell.gridPosition.y), dataToMatch, matches, visited);
-            FloodFillFindMatches(GetCell(cell.gridPosition.x - 1, cell.gridPosition.y), dataToMatch, matches, visited);
-            FloodFillFindMatches(GetCell(cell.gridPosition.x, cell.gridPosition.y + 1), dataToMatch, matches, visited);
-            FloodFillFindMatches(GetCell(cell.gridPosition.x, cell.gridPosition.y - 1), dataToMatch, matches, visited);
+            var list = new List<Cell>();
+            foreach (var cell in _allCells)
+            {
+                if (!cell.IsOccupied) list.Add(cell);
+            }
+            return list;
         }
     }
 }
