@@ -52,6 +52,8 @@ namespace MergeEvolution.Core
 
         private void OnMouseDown()
         {
+            if (MergeGameManager.Instance == null || !MergeGameManager.Instance.CanInteract) return;
+
             dragStartCell = currentCell;
             if (dragStartCell != null) dragStartCell.ClearPiece();
 
@@ -64,6 +66,8 @@ namespace MergeEvolution.Core
 
         private void OnMouseDrag()
         {
+            if (dragStartCell == null) return;
+
             var mouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             mouse.z = 0f;
             transform.position = mouse + _offset;
@@ -72,6 +76,8 @@ namespace MergeEvolution.Core
         private void OnMouseUp()
         {
             _sr.sortingOrder = 10;
+
+            if (dragStartCell == null) return;
             MergeGameManager.Instance?.HandleDrop(this);
         }
 
