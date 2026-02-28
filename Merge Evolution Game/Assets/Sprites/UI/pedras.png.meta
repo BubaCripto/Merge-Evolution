@@ -1,0 +1,1144 @@
+fileFormatVersion: 2
+guid: a1293cbbec652f04c803725b0f6d43ae
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7237799162724510888
+    second: pedras_0
+  - first:
+      213: 5054133025940229083
+    second: pedras_1
+  - first:
+      213: -7224137185593864812
+    second: pedras_2
+  - first:
+      213: 1359922208960054588
+    second: pedras_3
+  - first:
+      213: 6794692168857818830
+    second: pedras_4
+  - first:
+      213: -637887106664046360
+    second: pedras_5
+  - first:
+      213: 4348511264375529837
+    second: pedras_6
+  - first:
+      213: -2460763839933744178
+    second: pedras_7
+  - first:
+      213: -3524298523665531
+    second: pedras_8
+  - first:
+      213: 6484405164079807660
+    second: pedras_9
+  - first:
+      213: 3612205558313138222
+    second: pedras_10
+  - first:
+      213: 3412609604355585374
+    second: pedras_11
+  - first:
+      213: -4804238000433598673
+    second: pedras_12
+  - first:
+      213: -281921228155348289
+    second: pedras_13
+  - first:
+      213: -4998966874229447080
+    second: pedras_14
+  - first:
+      213: 1648177971598946334
+    second: pedras_15
+  - first:
+      213: 7229334245532943719
+    second: pedras_16
+  - first:
+      213: 4836198278657171905
+    second: pedras_17
+  - first:
+      213: -2942025300064274261
+    second: pedras_18
+  - first:
+      213: -8009626870495202045
+    second: pedras_19
+  - first:
+      213: 7748516472173143340
+    second: pedras_20
+  - first:
+      213: -2165428796260631162
+    second: pedras_21
+  - first:
+      213: 9036735578518114635
+    second: pedras_22
+  - first:
+      213: 1242366799910502234
+    second: pedras_23
+  - first:
+      213: 4299067961909222471
+    second: pedras_24
+  - first:
+      213: 121354807654384069
+    second: pedras_25
+  - first:
+      213: 7952330146095882259
+    second: pedras_26
+  - first:
+      213: -5661034453513169086
+    second: pedras_27
+  - first:
+      213: -9108132205242650679
+    second: pedras_28
+  - first:
+      213: 401913530506213704
+    second: pedras_29
+  - first:
+      213: -6886609401109894885
+    second: pedras_30
+  - first:
+      213: -5458862489930595388
+    second: pedras_31
+  - first:
+      213: 1427950889338619437
+    second: pedras_32
+  - first:
+      213: -912358245059912711
+    second: pedras_33
+  - first:
+      213: -9052720595747381133
+    second: pedras_34
+  - first:
+      213: -2359353052856179395
+    second: pedras_35
+  - first:
+      213: -4271516300598510455
+    second: pedras_36
+  - first:
+      213: 4078442234369207115
+    second: pedras_37
+  - first:
+      213: -7360508750587518320
+    second: pedras_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pedras_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1334
+        width: 338
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ac60d1bdf3d17460800000000000000
+      internalID: 7237799162724510888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedras_1
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 1334
+        width: 319
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdbccba8533e32640800000000000000
+      internalID: 5054133025940229083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedras_2
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 1334
+        width: 371
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49dccfb3185bebb90800000000000000
+      internalID: -7224137185593864812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedras_3
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1197
+        width: 491
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c358a3b3b0a6fd210800000000000000
+      internalID: 1359922208960054588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedras_4
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 1187
+        width: 496
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec616ea17889b4e50800000000000000
+      internalID: 6794692168857818830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedras_5
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 1207
+        width: 34
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e0ec706e05c527f0800000000000000
+      internalID: -637887106664046360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedras_6
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 1045
+        width: 322
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6163ee94f3095c30800000000000000
+      internalID: 4348511264375529837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedras_7
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1045
+        width: 323
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecb7f94435c99ddd0800000000000000
+      internalID: -2460763839933744178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedras_8
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 1016
+        width: 345
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58b1a6e4baa73fff0800000000000000
+      internalID: -3524298523665531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedras_9
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 847
+        width: 218
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cac7fa0142c3df950800000000000000
+      internalID: 6484405164079807660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedras_10
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 891
+        width: 199
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2832f621d1212230800000000000000
+      internalID: 3612205558313138222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedras_11
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 888
+        width: 180
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5573b8ba560c5f20800000000000000
+      internalID: 3412609604355585374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedras_12
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 891
+        width: 163
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2fe8b71efae35db0800000000000000
+      internalID: -4804238000433598673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedras_13
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 889
+        width: 189
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fba982df22a661cf0800000000000000
+      internalID: -281921228155348289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedras_14
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 726
+        width: 288
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 856eb911d1a10aab0800000000000000
+      internalID: -4998966874229447080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedras_15
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 731
+        width: 267
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1077cbf1218fd610800000000000000
+      internalID: 1648177971598946334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedras_16
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 733
+        width: 183
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 765ce839131c35460800000000000000
+      internalID: 7229334245532943719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedras_17
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 731
+        width: 219
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c167be06b0ad1340800000000000000
+      internalID: 4836198278657171905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedras_18
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 569
+        width: 258
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba8f47db393db27d0800000000000000
+      internalID: -2942025300064274261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedras_19
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 573
+        width: 218
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 305b5b05cc618d090800000000000000
+      internalID: -8009626870495202045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedras_20
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 575
+        width: 194
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c25a4249da2488b60800000000000000
+      internalID: 7748516472173143340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedras_21
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 573
+        width: 282
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68dbb749bf9d2f1e0800000000000000
+      internalID: -2165428796260631162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedras_22
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 397
+        width: 288
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b41d4b6412fe86d70800000000000000
+      internalID: 9036735578518114635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedras_23
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 397
+        width: 365
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5f776da506cd3110800000000000000
+      internalID: 1242366799910502234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedras_24
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 393
+        width: 330
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74c9cdea88b59ab30800000000000000
+      internalID: 4299067961909222471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedras_25
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 253
+        width: 230
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c1860afd832fa100800000000000000
+      internalID: 121354807654384069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedras_26
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 254
+        width: 238
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 310eca6722a5c5e60800000000000000
+      internalID: 7952330146095882259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedras_27
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 251
+        width: 213
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24799117827ff61b0800000000000000
+      internalID: -5661034453513169086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedras_28
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 251
+        width: 236
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cf673b240a699180800000000000000
+      internalID: -9108132205242650679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedras_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 113
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 849fe300a32e39500800000000000000
+      internalID: 401913530506213704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedras_30
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 8
+        width: 603
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b19aafb8c39dd60a0800000000000000
+      internalID: -6886609401109894885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedras_31
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 80
+        width: 84
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c38bf9dc793e34b0800000000000000
+      internalID: -5458862489930595388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedras_32
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 80
+        width: 131
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d264bbba4c911d310800000000000000
+      internalID: 1427950889338619437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedras_33
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 143
+        width: 97
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fb1e4f8207a653f0800000000000000
+      internalID: -912358245059912711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedras_34
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 80
+        width: 195
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3706d9fd4964e5280800000000000000
+      internalID: -9052720595747381133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedras_35
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 147
+        width: 35
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3526c816e4e14fd0800000000000000
+      internalID: -2359353052856179395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedras_36
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 8
+        width: 406
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98cf88a5e8688b4c0800000000000000
+      internalID: -4271516300598510455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedras_37
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 149
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4be6888a99899830800000000000000
+      internalID: 4078442234369207115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedras_38
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 141
+        width: 111
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 092a31bf9483ad990800000000000000
+      internalID: -7360508750587518320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      pedras_0: 7237799162724510888
+      pedras_1: 5054133025940229083
+      pedras_10: 3612205558313138222
+      pedras_11: 3412609604355585374
+      pedras_12: -4804238000433598673
+      pedras_13: -281921228155348289
+      pedras_14: -4998966874229447080
+      pedras_15: 1648177971598946334
+      pedras_16: 7229334245532943719
+      pedras_17: 4836198278657171905
+      pedras_18: -2942025300064274261
+      pedras_19: -8009626870495202045
+      pedras_2: -7224137185593864812
+      pedras_20: 7748516472173143340
+      pedras_21: -2165428796260631162
+      pedras_22: 9036735578518114635
+      pedras_23: 1242366799910502234
+      pedras_24: 4299067961909222471
+      pedras_25: 121354807654384069
+      pedras_26: 7952330146095882259
+      pedras_27: -5661034453513169086
+      pedras_28: -9108132205242650679
+      pedras_29: 401913530506213704
+      pedras_3: 1359922208960054588
+      pedras_30: -6886609401109894885
+      pedras_31: -5458862489930595388
+      pedras_32: 1427950889338619437
+      pedras_33: -912358245059912711
+      pedras_34: -9052720595747381133
+      pedras_35: -2359353052856179395
+      pedras_36: -4271516300598510455
+      pedras_37: 4078442234369207115
+      pedras_38: -7360508750587518320
+      pedras_4: 6794692168857818830
+      pedras_5: -637887106664046360
+      pedras_6: 4348511264375529837
+      pedras_7: -2460763839933744178
+      pedras_8: -3524298523665531
+      pedras_9: 6484405164079807660
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
